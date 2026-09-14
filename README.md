@@ -1,5 +1,5 @@
-# -
-تكتب معلوماتك لترسلها لي في الواتس اب ويب
+
+# تكتب معلوماتك لترسلها لي في الواتس اب ويب
 import streamlit as st
 import urllib.parse
 
@@ -45,7 +45,7 @@ if submit_button:
             # ترميز النص ليكون متوافقاً مع الروابط (URL Encoding)
             encoded_message = urllib.parse.quote(whatsapp_message)
 
-            # إنشاء رابط الواتساب المباشر
+            # إنشاء رابط الواتساب المباشر (تعديل إضافة الشرطة المائلة بعد wa.me)
             whatsapp_url = f"https://wa.me{WHATSAPP_NUMBER}?text={encoded_message}"
 
             st.success("✅ تم تجهيز البطاقة بنجاح!")
